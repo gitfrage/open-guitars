@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Tonabnehmer Anschlussarten - open.guitars</title>
+  <title>Tonabnehmer Anschlussarten - www.open-guitars.de</title>
   <link rel="canonical" href="https://www.open-guitars.de"/>
   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
@@ -25,12 +25,48 @@
   <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/css/main.css?id=60429c2b59fc5140453e">
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="/js/nav.js?id=4d1c8dbd80faab817f82"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/js/nav.js?id=4d1c8dbd80faab817f82"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71612856-3"></script>
+  <script>
+    function loadGAonConsent(){
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-71612856-3', { 'anonymize_ip': true });           
+    }
+    if (document.cookie.split(';').filter(function(item) {
+        return item.indexOf('cookieconsent_status=allow') >= 0
+    }).length) {
+        loadGAonConsent();
+    }
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": { "background": "#000"},
+          "button": { "background": "#f1d600"}
+        },
+        "theme": "classic",
+        "type": "opt-in",
+        "content": {
+          "message": "Wir nutzen Cookies und Google Analytics, um diese Website für Sie so interessant wie möglich zu gestalten. Sind Sie damit einverstanden? (Sie können diese Entscheidung jederzeit widerrufen)",
+          "deny": "Ablehnen",
+          "allow": "OK, gerne!",
+          "link": "Datenschutz",
+          "href": "https://open-guitars.de/angebot/datenschutz/"
+        },
+        onStatusChange: function(status, chosenBefore) {
+          var type = this.options.type;
+          var didConsent = this.hasConsented();
+          if (type == 'opt-in' && didConsent) {
+            loadGAonConsent();
+          }
+        }
+      })
+    });
+  </script>
 </head>
 <body data-sidebar-visible="true" class="font-source-sans font-normal text-black leading-normal">
   
@@ -130,6 +166,16 @@
             <div class="flex">
               <div class="markdown px-6 xl:px-12 w-full max-w-lg mx-auto lg:ml-0 lg:mr-auto xl:mx-0 xl:w-3/4">
                 <p><img src="/images/clip5_hambucker.jpg" alt="clipart-elektronik-pu" /></p>
+<h2>Eigenschaften</h2>
+<ul>
+<li>Dimension und Produktgruppe - siehe Kapitel <a href="/egitarrenbau/gitarrenkorpus#tonabnehmer-routing">Tonabnehmer Routing</a></li>
+<li>Position: Bridge, Neck, Midd­le</li>
+<li>Anzahl Adern:  1, 2, 3  or 4-Ader (4-Con­ductor allowing most flexible wiring)*</li>
+<li>Symmetrische vs unsymmetrische Anschlussart</li>
+<li>Output: low(vintage), medium, high (vintage wird oft für jazz and blues eingesetzt)</li>
+<li>Passive vs. Active (Active wird oft für &quot;dstortion sound&quot; eingesetzt)</li>
+<li>E.Q. Chat: Betonnung von Bass, Mitten oder Höhen.</li>
+</ul>
 <h2>Schaltzustände</h2>
 <p>Tonabnehmer unterscheiden sich nach Anschlussart (symmetrisch vs unsymmetrisch) und durch Anzahl von Anschlussadern (1 bis 4). Klassische Humbucker sind unsymmetrisch und sind intern in Reihe (d.h. seriell - bringt mehr Leistung) gegenphasig
 (geräuschärmer) verdrahtet. Die aktuellen mehrdrahtigen PUs bieten die Möglichkeit, die Spulen mittels Push/Pull Pots, Mini Switches, Togles, Megaswitches und Drehschalter anders zu schalten, und erlauben breite Kontrollmöglichkeiten vom Klang direkt an der Gitarre.</p>
@@ -310,44 +356,6 @@ Parallel             |--|</code></pre>
     </linearGradient>
   </defs>
 </svg>
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71612856-3"></script>
-  <script>
-    function loadGAonConsent(){
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-71612856-3', { 'anonymize_ip': true });           
-    }
-    if (document.cookie.split(';').filter(function(item) {
-        return item.indexOf('cookieconsent_status=allow') >= 0
-    }).length) {
-        loadGAonConsent();
-    }
-    window.addEventListener("load", function(){
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": { "background": "#000"},
-          "button": { "background": "#f1d600"}
-        },
-        "theme": "classic",
-        "type": "opt-in",
-        "content": {
-          "message": "Wir nutzen Cookies und Google Analytics, um diese Website für Sie so interessant wie möglich zu gestalten. Sind Sie damit einverstanden? (Sie können diese Entscheidung jederzeit widerrufen)",
-          "deny": "Ablehnen",
-          "allow": "OK, gerne!",
-          "link": "Datenschutz",
-          "href": "https://open-guitars.de/angebot/datenschutz/"
-        },
-        onStatusChange: function(status, chosenBefore) {
-          var type = this.options.type;
-          var didConsent = this.hasConsented();
-          if (type == 'opt-in' && didConsent) {
-            loadGAonConsent();
-          }
-        }
-      })
-    });
-  </script>
+  <script data-ad-client="ca-pub-1145311460811931" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </body>
 </html>
