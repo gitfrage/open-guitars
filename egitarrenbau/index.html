@@ -229,10 +229,41 @@
   <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71612856-3"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-71612856-3', { 'anonymize_ip': true });
+    function loadGAonConsent(){
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-71612856-3', { 'anonymize_ip': true });           
+    }
+    if (document.cookie.split(';').filter(function(item) {
+        return item.indexOf('cookieconsent_status=allow') >= 0
+    }).length) {
+        loadGAonConsent();
+    }
+    window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": { "background": "#000"},
+          "button": { "background": "#f1d600"}
+        },
+        "theme": "classic",
+        "type": "opt-in",
+        "content": {
+          "message": "Wir nutzen Cookies und Google Analytics, um diese Website für Sie so interessant wie möglich zu gestalten. Sind Sie damit einverstanden? (Sie können diese Entscheidung jederzeit widerrufen)",
+          "deny": "Ablehnen",
+          "allow": "OK, gerne!",
+          "link": "Datenschutz",
+          "href": "https://open-guitars.de/angebot/datenschutz/"
+        },
+        onStatusChange: function(status, chosenBefore) {
+          var type = this.options.type;
+          var didConsent = this.hasConsented();
+          if (type == 'opt-in' && didConsent) {
+            loadGAonConsent();
+          }
+        }
+      })
+    });
   </script>
 </body>
 </html>
