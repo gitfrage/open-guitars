@@ -2,147 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
   <loc>https://www.open-guitars.de</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://www.open-guitars.de/docs/custom-404-page</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://www.open-guitars.de/docs/navigation</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://www.open-guitars.de/docs/getting-started</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://www.open-guitars.de/docs/customizing-your-site</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://www.open-guitars.de/docs/algolia-docsearch</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/angebot/datenschutz</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/angebot/jazz-one</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/angebot/impressum</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/angebot/jazz-moon</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/angebot/jazz-blue</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://www.open-guitars.de/angebot/lizenzen</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.deangebot</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/pu-verdrahtungsschemas</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/mensurlaenge</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://www.open-guitars.deegitarrenbau</loc>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/gitarrenkorpus</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/gitarrenteile</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/auswahl-jazz-tonabnehmer</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/pu-kondensatoren</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/pu-schalter</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/klang-und-bespielbarkeit</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/sound-einflussfaktoren</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/mechaniken</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/saitenklang</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/gitarrenhals</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/bridges</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/pu-anschlussarten</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/pu-potentiometer</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://www.open-guitars.de/egitarrenbau/tonholz</loc>
-  <lastmod>2020-03-01T08:48:10+00:00</lastmod>
+  <lastmod>2020-03-01T09:06:10+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
