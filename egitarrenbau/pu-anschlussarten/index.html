@@ -1,361 +1,465 @@
 <!DOCTYPE html>
-<html lang="de" class="bg-white antialiased">
-<head>
-  <meta name="google-site-verification" content="FzT4E9umbwhJ-61h5oHZW9nwX1sgTHjphPmCVY7ekWo" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Tonabnehmer Anschlussarten - www.open-guitars.de</title>
-  <link rel="canonical" href="https://www.open-guitars.de"/>
-  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/images/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#816341">
-  <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/css/main.css?id=60429c2b59fc5140453e">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="/js/nav.js?id=4d1c8dbd80faab817f82"></script>
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71612856-3"></script>
-  <script>
-    function loadGAonConsent(){
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-71612856-3', { 'anonymize_ip': true });           
-    }
-    if (document.cookie.split(';').filter(function(item) {
-        return item.indexOf('cookieconsent_status=allow') >= 0
-    }).length) {
-        loadGAonConsent();
-    }
-    window.addEventListener("load", function(){
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": { "background": "#000"},
-          "button": { "background": "#f1d600"}
-        },
-        "theme": "classic",
-        "type": "opt-in",
-        "content": {
-          "message": "Wir nutzen Cookies und Google Analytics, um diese Website für Sie so interessant wie möglich zu gestalten. Sind Sie damit einverstanden? (Sie können diese Entscheidung jederzeit widerrufen)",
-          "deny": "Ablehnen",
-          "allow": "OK, gerne!",
-          "link": "Datenschutz",
-          "href": "https://open-guitars.de/angebot/datenschutz/"
-        },
-        onStatusChange: function(status, chosenBefore) {
-          var type = this.options.type;
-          var didConsent = this.hasConsented();
-          if (type == 'opt-in' && didConsent) {
-            loadGAonConsent();
-          }
-        }
-      })
-    });
-  </script>
-</head>
-<body data-sidebar-visible="true" class="font-source-sans font-normal text-black leading-normal">
-  
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Pickup Schaltzustände, Schaltung der Spulen">
 
-<div class="flex bg-white border-b border-grey-lighter fixed pin-t pin-x z-100 h-16 items-center bg-top-nav">
-  <div class="w-full max-w-screen-xl relative mx-auto px-6">
-    <div class="flex items-center -mx-6">
+        <meta property="og:site_name" content="open-guitars.de"/>
+        <meta property="og:title" content="Tonabnehmer Anschlussarten | open-guitars.de"/>
+        <meta property="og:description" content="Pickup Schaltzustände, Schaltung der Spulen"/>
+        <meta property="og:url" content="https://www.open-guitars.de/egitarrenbau/pu-anschlussarten"/>
+        <meta property="og:image" content="/assets/images/clip1_body-nobg.png"/>
+        <meta property="og:type" content="website"/>
 
-      <span class="openg-logo m-6"> <a href="/">OPEN.GUITARS</a> </span>
-      <span class="openg-slogan">Premium Blues und Jazz Gitarren</span>
-
-      <div id="sidebar-open" class="flex px-6 items-center lg:hidden">
-        <svg class="fill-current w-4 h-4 cursor-pointer text-grey" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-      </div>
-
-      <div id="sidebar-close" class="hidden flex px-6 items-center lg:hidden">
-        <svg class="fill-current w-4 h-4 cursor-pointer text-grey" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/></svg>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-
-<div class="w-full max-w-screen-xl mx-auto px-6">
-  <div class="lg:flex -mx-6">
-
-    
-    <div id="sidebar" class="hidden absolute z-90 top-16 bg-white w-full border-b -mb-16 lg:-mb-0 lg:static lg:bg-transparent lg:border-b-0 lg:pt-0 lg:w-1/4 lg:block lg:border-0 xl:w-1/5 bg-side-nav">
-      <div class="lg:block lg:relative lg:sticky lg:top-16">
-        <nav id="nav" class="px-6 pt-6 overflow-y-auto text-base lg:text-sm lg:py-12 lg:pl-6 lg:pr-8 sticky?lg:h-(screen-16)">
-                    <div class="mb-6">
-            <p class="mb-3 lg:mb-2 text-grey uppercase tracking-wide font-bold text-sm lg:text-xs">Gitarrenbau Einführung</p>
-            <ul>
-                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/klang-und-bespielbarkeit">Klang und Bespielbarkeit</a></li>
-                                          </ul>
-          </div>
-                    <div class="mb-6">
-            <p class="mb-3 lg:mb-2 text-grey uppercase tracking-wide font-bold text-sm lg:text-xs">Necks &amp; Bodies</p>
-            <ul>
-                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/gitarrenhals">Der Gitarrenhals</a></li>
-                                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/gitarrenkorpus">Der Gitarrenkorpus</a></li>
-                                          </ul>
-          </div>
-                    <div class="mb-6">
-            <p class="mb-3 lg:mb-2 text-grey uppercase tracking-wide font-bold text-sm lg:text-xs">Hardware</p>
-            <ul>
-                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/bridges">Brücken, Stege, Saitenhalter</a></li>
-                                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/mechaniken">Mechaniken</a></li>
-                                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/gitarrenteile">Checkliste Gitarrenteile</a></li>
-                                          </ul>
-          </div>
-                    <div class="mb-6">
-            <p class="mb-3 lg:mb-2 text-grey uppercase tracking-wide font-bold text-sm lg:text-xs">Elektronik</p>
-            <ul>
-                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/sound-einflussfaktoren">Sound Einflussfaktoren</a></li>
-                                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-teal-dark font-semibold" href="https://www.open-guitars.de/egitarrenbau/pu-anschlussarten">Tonabnehmer Anschlussarten</a></li>
-                                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/pu-schalter">Tonabnehmer Schalter</a></li>
-                                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/pu-potentiometer">Potentiometer Regler</a></li>
-                                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/pu-kondensatoren">Kondensatoren</a></li>
-                                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/pu-verdrahtungsschemas">Verdrahtungsschemas</a></li>
-                                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/auswahl-jazz-tonabnehmer">Auswahl Jazz Tonabnehmer</a></li>
-                                          </ul>
-          </div>
-                    <div class="mb-6">
-            <p class="mb-3 lg:mb-2 text-grey uppercase tracking-wide font-bold text-sm lg:text-xs">Allgemein</p>
-            <ul>
-                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/mensurlaenge">Mensurlaenge</a></li>
-                                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/tonholz">Tonholz</a></li>
-                                                                <li class="mb-3 lg:mb-2"><a class="hover:underline text-grey-darkest" href="https://www.open-guitars.de/egitarrenbau/saitenklang">Saitenklang</a></li>
-                                          </ul>
-          </div>
-                  </nav>
-      </div>
-    </div>
-    
-
-    
-    <div class="min-h-screen w-full lg:w-3/4 xl:w-4/5">
-
-      
-      <div id="content">
+        <meta name="twitter:image:alt" content="open-guitars.de">
+        <meta name="twitter:card" content="summary_large_image">
 
         
-        <div id="app" class="flex">
+        <title>open-guitars.de | Tonabnehmer Anschlussarten</title>
 
-          
-          <div class="pt-24 pb-8 lg:pt-28 w-full">
-            <div class="markdown mb-6 px-6 max-w-lg mx-auto lg:ml-0 lg:mr-auto xl:mx-0 xl:px-12 xl:w-3/4">
-                            <h1>Tonabnehmer Anschlussarten</h1>
-                                            <div class="text-xl text-grey-dark mb-4">
-                  Pickup Schaltzustände, Schaltung der Spulen und Farbcodes
+        <link rel="home" href="https://www.open-guitars.de">
+        <link rel="icon" href="/assets/images/favicon/favicon.ico">
+
+        
+                    <!-- Insert analytics code here -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=e45bffc2c1a18b91df78">
+
+            </head>
+
+
+    <body class="flex flex-col justify-between min-h-screen text-gray-800 leading-normal font-sans">
+
+        <header class="flex items-center shadow bg-gray-100 border-b h-24 mb-8 py-4 bg-top-nav" role="banner">
+            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+                <div class="flex items-center">
+                    <a href="/" title="open-guitars.de home" class="inline-flex items-center">
+                        <img class="h-8 md:h-10 mr-3" src="/assets/images/clip1_body-nobg.png" alt="open-guitars.de logo" />
+                        <h1 class="text-lg md:text-2xl text-blue-900 font-semibold hover:text-blue-600 my-0 pr-4">open-guitars.de</h1>
+                    </a>
                 </div>
-                          </div>
-            <div class="flex">
-              <div class="markdown px-6 xl:px-12 w-full max-w-lg mx-auto lg:ml-0 lg:mr-auto xl:mx-0 xl:w-3/4">
-                <p><img src="/images/clip5_hambucker.jpg" alt="clipart-elektronik-pu" /></p>
+                <div class="flex flex-1 justify-end items-center text-right md:pl-10">
+                                    </div>
+            </div>
+                <button class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 mr-4 px-5 rounded-full lg:hidden focus:outline-none"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+        </header>
+
+        <main role="main" class="w-full flex-auto">
+            
+<section class="container max-w-8xl mx-auto px-6 md:px-8 py-4">
+    <div class="flex flex-col lg:flex-row">
+
+        <nav id="js-nav-menu" class="nav-menu hidden lg:block">
+            <ul class="my-0 list-none">
+            <li class="pl-4">
+            
+        <p class="nav-menu__item text-gray-600">GITARRENBAU EINFÜHRUNG</p>
+    
+            
+        <ul class="my-0 list-none">
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/klang-und-bespielbarkeit"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Klang und Bespielbarkeit
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <p class="nav-menu__item text-gray-600">NECKS &amp; BODIES</p>
+    
+            
+        <ul class="my-0 list-none">
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/gitarrenhals"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Der Gitarrenhals
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/gitarrenkorpus"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Der Gitarrenkorpus
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <p class="nav-menu__item text-gray-600">HARDWARE</p>
+    
+            
+        <ul class="my-0 list-none">
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/bridges"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Brücken, Stege, Saitenhalter
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/mechaniken"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Mechaniken
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/gitarrenteile"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Checkliste Gitarrenteile
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <p class="nav-menu__item text-gray-600">ELEKTRONIK</p>
+    
+            
+        <ul class="my-0 list-none">
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/sound-einflussfaktoren"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Sound Einflussfaktoren
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/pu-anschlussarten"
+            class="lvl1  active font-semibold text-blue-500 nav-menu__item hover:text-blue-500"
+        >
+            Tonabnehmer Anschlussarten
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/pu-schalter"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Tonabnehmer Schalter
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/pu-potentiometer"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Potentiometer Regler
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/pu-kondensatoren"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Kondensatoren
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/pu-verdrahtungsschemas"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Verdrahtungsschemas
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/auswahl-jazz-tonabnehmer"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Auswahl Jazz Tonabnehmer
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
+        <p class="nav-menu__item text-gray-600">ALLGEMEIN</p>
+    
+            
+        <ul class="my-0 list-none">
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/mensurlaenge"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Mensurlaenge
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/tonholz"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Tonholz
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/egitarrenbau/saitenklang"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Saitenklang
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+    </ul>
+        </nav>
+
+        <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
+
+        	<h1 class="mb-0">Tonabnehmer Anschlussarten</h1>
+        	<p class="text-gray-600 text-xl md:mt-0">Pickup Schaltzustände, Schaltung der Spulen</p>
+
+            <p><img src="/assets/images/clip5_hambucker.jpg" alt="clipart-elektronik-pu" /></p>
+
 <h2>Eigenschaften</h2>
+
 <ul>
 <li>Dimension und Produktgruppe - siehe Kapitel <a href="/egitarrenbau/gitarrenkorpus#tonabnehmer-routing">Tonabnehmer Routing</a></li>
 <li>Position: Bridge, Neck, Midd­le</li>
 <li>Anzahl Adern:  1, 2, 3  or 4-Ader (4-Con­ductor allowing most flexible wiring)*</li>
 <li>Symmetrische vs unsymmetrische Anschlussart</li>
 <li>Output: low(vintage), medium, high (vintage wird oft für jazz and blues eingesetzt)</li>
-<li>Passive vs. Active (Active wird oft für &quot;dstortion sound&quot; eingesetzt)</li>
+<li>Passive vs. Active (Active wird oft für "dstortion sound" eingesetzt)</li>
 <li>E.Q. Chat: Betonnung von Bass, Mitten oder Höhen.</li>
 </ul>
+
 <h2>Schaltzustände</h2>
-<p>Tonabnehmer unterscheiden sich nach Anschlussart (symmetrisch vs unsymmetrisch) und durch Anzahl von Anschlussadern (1 bis 4). Klassische Humbucker sind unsymmetrisch und sind intern in Reihe (d.h. seriell - bringt mehr Leistung) gegenphasig
+
+<p>Tonabnehmer unterscheiden sich nach Anschlussart (symmetrisch vs unsymmetrisch) und durch Anzahl von Anschlussadern (1 bis 4). Klassische Humbucker sind unsymmetrisch und sind intern in Reihe (d.h. seriell - bringt mehr Leistung) gegenphasig 
 (geräuschärmer) verdrahtet. Die aktuellen mehrdrahtigen PUs bieten die Möglichkeit, die Spulen mittels Push/Pull Pots, Mini Switches, Togles, Megaswitches und Drehschalter anders zu schalten, und erlauben breite Kontrollmöglichkeiten vom Klang direkt an der Gitarre.</p>
+
 <p>Die aktuellen Tonabnehmer bieten folgende Schaltzustände:</p>
+
 <table>
 <thead>
 <tr>
-<th>Adern</th>
-<th>Anschlussart</th>
-<th>Coil Split</th>
-<th>Seriell/Parallel</th>
-<th>Phase Switch</th>
-<th>Beispiel</th>
+  <th>Adern</th>
+  <th>Anschlussart</th>
+  <th>Coil Split</th>
+  <th>Seriell/Parallel</th>
+  <th>Phase Switch</th>
+  <th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1x</td>
-<td>unsymmetrisch</td>
-<td>nur Humbucker Mode</td>
-<td>Nur Seriell</td>
-<td>Nein</td>
-<td>Shadow AZ48</td>
+  <td>1x</td>
+  <td>unsymmetrisch</td>
+  <td>nur Humbucker Mode</td>
+  <td>Nur Seriell</td>
+  <td>Nein</td>
+  <td>Shadow AZ48</td>
 </tr>
 <tr>
-<td>2x</td>
-<td>symmetrisch</td>
-<td>nur Humbucker Mode</td>
-<td>Nur Seriell</td>
-<td>Ja</td>
-<td>Fender Wide Range (Mexico)</td>
+  <td>2x</td>
+  <td>symmetrisch</td>
+  <td>nur Humbucker Mode</td>
+  <td>Nur Seriell</td>
+  <td>Ja</td>
+  <td>Fender Wide Range (Mexico)</td>
 </tr>
 <tr>
-<td>2x</td>
-<td>unsymmetrisch</td>
-<td>Humbucker &amp; Single Coil Mode</td>
-<td>Nur Seriell</td>
-<td>Nein</td>
-<td>Benedetto B6</td>
+  <td>2x</td>
+  <td>unsymmetrisch</td>
+  <td>Humbucker &amp; Single Coil Mode</td>
+  <td>Nur Seriell</td>
+  <td>Nein</td>
+  <td>Benedetto B6</td>
 </tr>
 <tr>
-<td>3x</td>
-<td>symmetrisch</td>
-<td>Humbucker &amp; Single Coil Mode</td>
-<td>Nur Seriell</td>
-<td>Ja</td>
-<td>viele aktive PUs</td>
+  <td>3x</td>
+  <td>symmetrisch</td>
+  <td>Humbucker &amp; Single Coil Mode</td>
+  <td>Nur Seriell</td>
+  <td>Ja</td>
+  <td>viele aktive PUs</td>
 </tr>
 <tr>
-<td>3x</td>
-<td>unsymmetrisch</td>
-<td>Humbucker &amp; Single Coil Mode</td>
-<td>Seriell und Parallel</td>
-<td>Nein</td>
-<td>PRS 59</td>
+  <td>3x</td>
+  <td>unsymmetrisch</td>
+  <td>Humbucker &amp; Single Coil Mode</td>
+  <td>Seriell und Parallel</td>
+  <td>Nein</td>
+  <td>PRS 59</td>
 </tr>
 <tr>
-<td>4x</td>
-<td>symmetrisch</td>
-<td>Humbucker &amp; Single Coil Mode</td>
-<td>Seriell und Parallel</td>
-<td>Ja</td>
-<td>alle 4-adrigen PUs</td>
+  <td>4x</td>
+  <td>symmetrisch</td>
+  <td>Humbucker &amp; Single Coil Mode</td>
+  <td>Seriell und Parallel</td>
+  <td>Ja</td>
+  <td>alle 4-adrigen PUs</td>
 </tr>
 </tbody>
 </table>
+
 <ul>
-<li>Coil Split - &quot;Single Coil Sound&quot;</li>
-<li>Seriell/Parallel Schaltung - &quot;doppelter Single Coil Sound&quot;</li>
-<li>Phase-Switch - &quot;Out of Phase Sound&quot;</li>
+<li>Coil Split - "Single Coil Sound"</li>
+<li>Seriell/Parallel Schaltung - "doppelter Single Coil Sound"</li>
+<li>Phase-Switch - "Out of Phase Sound"</li>
 </ul>
+
 <blockquote>
-<p><a href="http://www.guitar-letter.de/Knowledge/Grundlagen/DerAnschlussunbekannterHumbucker.htm
-">Anschluß unbekannter Humbucker</a> - Erklärung symmetrischer vs unsymmetrischer Anschluß</p>
-<p><a href="http://www.guitar-letter.de/Knowledge/SchaltplansymbolefuerTonabnehmer.htm
-">Schaltplansymbole für Tonabnehmer</a> - Übersicht über die Eigenschaften von Tonabnehmern</p>
+  <p><a href="http://www.guitar-letter.de/Knowledge/Grundlagen/DerAnschlussunbekannterHumbucker.htm">Anschluß unbekannter Humbucker</a> - Erklärung symmetrischer vs unsymmetrischer Anschluß<br />
+  <a href="http://www.guitar-letter.de/Knowledge/SchaltplansymbolefuerTonabnehmer.htm">Schaltplansymbole für Tonabnehmer</a> - Übersicht über die Eigenschaften von Tonabnehmern</p>
 </blockquote>
+
 <h2>Die Schaltung der Spulen</h2>
+
 <p>Bei Standard Humbuckern (Schaltung in Reihe/Serie) wird das Ende der ersten Spulenwicklung (B) mit dem Ende der zweiten (D) verbunden. Bei paralleler Schaltung - A zu D und B zu C. Bei Coil-Splitting wird nur eine Spule angezapft (also nur AB oder CD).</p>
+
 <pre><code>            A -\\\\- B  C -\\\\- D
 Standard             |-----------|
-Parallel             |--|</code></pre>
+Parallel             |--|
+</code></pre>
+
 <h2>Farbcodes</h2>
+
 <p>Je nach Hersteller ändern sich die Farbcodes bei PUs, zum Beispiel:</p>
+
 <table>
 <thead>
 <tr>
-<th>Hersteller</th>
-<th>Dimarzio</th>
-<th>Fender</th>
-<th>Gibson</th>
-<th>Schaller</th>
-<th>Schadow</th>
-<th>Seymour Duncan</th>
+  <th>Hersteller</th>
+  <th>Dimarzio</th>
+  <th>Fender</th>
+  <th>Gibson</th>
+  <th>Schaller</th>
+  <th>Schadow</th>
+  <th>Seymour Duncan</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>A (+)</td>
-<td><span class="bg-red px2 py1"> - </span></td>
-<td><span class="bg-green px2 py1"> - </span></td>
-<td><span class="bg-red px2 py1"> - </span></td>
-<td><span class="bg-yellow px2 py1"> - </span></td>
-<td><span class="bg-green px2 py1"> - </span></td>
-<td><span class="bg-black px2 py1"> - </span></td>
+  <td>A (+)</td>
+  <td><span class="bg-red-700 "> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-green-700 "> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-red-700"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-yellow-300 "> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-green-700"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-black"> &nbsp;&nbsp; </span></td>
 </tr>
 <tr>
-<td>B</td>
-<td><span class="bg-black px2 py1"> - </span></td>
-<td><span class="bg-white px2 py1"> - </span></td>
-<td><span class="bg-white px2 py1"> - </span></td>
-<td><span class="bg-olive px2 py1"> - </span></td>
-<td><span class="bg-white px2 py1"> - </span></td>
-<td><span class="bg-white px2 py1"> - </span></td>
+  <td>B</td>
+  <td><span class="bg-black"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-white "> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-white"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-green-200"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-white"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-white"> &nbsp;&nbsp; </span></td>
 </tr>
 <tr>
-<td>C (-)</td>
-<td><span class="bg-green px2 py1"> - </span></td>
-<td><span class="bg-red px2 py1"> - </span></td>
-<td><span class="bg-black px2 py1"> - </span></td>
-<td><span class="bg-green px2 py1"> - </span></td>
-<td><span class="bg-yellow px2 py1"> - </span></td>
-<td><span class="bg-green px2 py1"> - </span></td>
+  <td>C (-)</td>
+  <td><span class="bg-green-700"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-red-700"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-black"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-green-700"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-yellow-300"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-green-700"> &nbsp;&nbsp; </span></td>
 </tr>
 <tr>
-<td>D</td>
-<td><span class="bg-white px2 py1"> - </span></td>
-<td><span class="bg-black px2 py1"> - </span></td>
-<td><span class="bg-green px2 py1"> - </span></td>
-<td><span class="bg-white px2 py1"> - </span></td>
-<td><span class="bg-olive px2 py1"> - </span></td>
-<td><span class="bg-red px2 py1"> - </span></td>
+  <td>D</td>
+  <td><span class="bg-white px3"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-black"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-green-700"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-white"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-green-200"> &nbsp;&nbsp; </span></td>
+  <td><span class="bg-red-700">&nbsp;&nbsp; </span></td>
 </tr>
 </tbody>
-</table>              </div>
-
-              
-              <div class="hidden xl:text-sm xl:block xl:w-1/4 xl:px-6">
-                <div class="flex flex-col justify-between overflow-y-auto sticky top-16 max-h-(screen-16) pt-12 pb-4 -mt-12">
-                  <table-of-contents class="mb-8"></table-of-contents>
-                </div>
-              </div>
-              
-
-            </div>
-          </div>
-          
-
-
+</table>
         </div>
-        
-
-        <script src="/js/app.js"></script>
-      </div>
-      
-
-
     </div>
-    
-  </div>
-</div>
+</section>
+        </main>
 
-<p class="border-t p-2 font-mono text-center text-grey-dark text-xs bg-grey-lightest">
-    ©2018 
-    <a href="/angebot/lizenzen">Lizenzen</a>
-    <a href="/angebot/datenschutz">Datenschutz</a>
-    <a href="/angebot/impressum">Impressum</a>
-    <a href="/angebot">Angebot</a>
-</p>
+        <footer class="bg-gray-100 text-center text-sm mt-12 py-1 border-t" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center list-none" >
+                <li class="md:mr-2"><a href="/angebot/datenschutz">Datenschutz </a></li>
+                <li class="md:mr-2"><a href="/angebot/impressum">Impressum </a></li>
+                <li><a href="/angebot">Angebot</a></li>
+            </ul>
+        </footer>
 
+        <div class="cookie-overlay fixed bottom">
+            <p>
+            Um unsere Webseite optimal gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. <br>
+            Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. <br>
+            Weitere Informationen finden Sie in unserer  <a href="/angebot/datenschutz">Datenschutzerklärung</a> 
+            und <a href="/angebot/impressum">Impressum. </a><br>
+            <button class="cookieButton bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-1 mt-1 px-6" onClick="buttonClick();"> OK </button>
+            </p>
+        </div>
 
+        <script src="/assets/build/js/main.js?id=430a848e0195f1ebe58a"></script>
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+ 
 
-<svg style="height: 0; width: 0; position: absolute; visibility: hidden;">
-  <defs>
-    <linearGradient x1="0%" y1="0%" y2="100%" id="logoGradient">
-      <stop stop-color="#2383AE" offset="0%"></stop>
-      <stop stop-color="#6DD7B9" offset="100%"></stop>
-    </linearGradient>
-  </defs>
-</svg>
-  <script data-ad-client="ca-pub-1145311460811931" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</body>
+        <script type="text/javascript">
+        function Cookie(){this.key="",this.value="",this.domain="",this.path="",this.expires=0,this.date=new Date,this.setCookie=function(){this.date.setTime(this.date.getTime()+this.expires),document.cookie=this.key+"="+this.value+";expires="+this.date.toUTCString()+";domain="+this.domain+";path="+this.path},this.isSet=function(){var e=this.key,i=this.value,t=document.cookie.split(";"),o=!1;return t.forEach(function(t,s){var n=t.trim().split("=");n[0]===e&&n[1]===i&&(o=!0)}),o}}function ready(e){"loading"!=document.readyState?e():document.addEventListener("DOMContentLoaded",e)}var cookie=new Cookie;function buttonClick(){cookie.setCookie(),document.getElementsByClassName("cookie-overlay")[0].style.visibility="hidden"}ready(function(){cookie.key="cookieOverlayAgreed",cookie.value="true",cookie.domain="localhost",cookie.path="/",cookie.expires=314496e5,cookie.isSet()?document.getElementsByClassName("cookie-overlay")[0].style.visibility="hidden":document.getElementsByClassName("cookie-overlay")[0].style.visibility=""});
+        </script>
+
+    </body>
 </html>

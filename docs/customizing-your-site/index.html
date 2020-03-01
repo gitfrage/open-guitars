@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="Mooncaster mit Benedetto Jazz Tonabnehmern">
+        <meta name="description" content="Customizing your Jigsaw docs site">
 
         <meta property="og:site_name" content="open-guitars.de"/>
-        <meta property="og:title" content="Angebot - Jazz Moon | open-guitars.de"/>
-        <meta property="og:description" content="Mooncaster mit Benedetto Jazz Tonabnehmern"/>
-        <meta property="og:url" content="https://www.open-guitars.de/angebot/jazz-moon"/>
+        <meta property="og:title" content="Customizing Your Site | open-guitars.de"/>
+        <meta property="og:description" content="Customizing your Jigsaw docs site"/>
+        <meta property="og:url" content="https://www.open-guitars.de/docs/customizing-your-site"/>
         <meta property="og:image" content="/assets/images/clip1_body-nobg.png"/>
         <meta property="og:type" content="website"/>
 
@@ -17,7 +17,7 @@
         <meta name="twitter:card" content="summary_large_image">
 
         
-        <title>open-guitars.de | Angebot - Jazz Moon</title>
+        <title>open-guitars.de | Customizing Your Site</title>
 
         <link rel="home" href="https://www.open-guitars.de">
         <link rel="icon" href="/assets/images/favicon/favicon.ico">
@@ -258,107 +258,85 @@
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
 
-        	<h1 class="mb-0">Angebot - Jazz Moon</h1>
-        	<p class="text-gray-600 text-xl md:mt-0">Mooncaster mit Benedetto Jazz Tonabnehmern</p>
+        	<h1 class="mb-0">Customizing Your Site</h1>
+        	<p class="text-gray-600 text-xl md:mt-0">Customizing your Jigsaw docs site</p>
 
-            <table>
+            <h1 id="customizing">Customizing Your Site</h1>
 
-   <tr>
-      <td> Custom Elektonik </td>
-      <td class="">"Jazz Moon" Push/Pull Vatitone</td>
-   </tr>
-   <tr>
-      <td>PU Neck</td>
-      <td class="">Seymourduncan Benedetto B-6 </td>
-   </tr>
-   <tr>
-      <td>PU Bridge</td>
-      <td class="">Seymourduncan Benedetto B-6</td>
-   </tr>
-   <tr>
-      <td>Body Modell</td>
-      <td>Warmoth Mooncaster Hollow Carved Top</td>
-   </tr>
-   <tr>
-      <td>Body Holz</td>
-      <td class="">Black Korina on Mahogany</td>
-   </tr>
-   <tr>
-      <td>Body Finish</td>
-      <td class="">Natur (Hartöl)</td>
-   </tr>
-   <tr>
-      <td>Routing</td>
-      <td class="">Rear Rout</td>
-   </tr>
-   <tr>
-      <td>Binding</td>
-      <td class="">White Binding</td>
-   </tr>
-   <tr>
-      <td>Hals Modell</td>
-      <td>Warmoth Pro Standard Thin Strat</td>
-   </tr>
-   <tr>
-      <td>Hals Holz/Griffbrett</td>
-      <td>Mahogany/Indian Rosewood</td>
-   </tr>
-   <tr>
-      <td>Hals Sattelbreite (Nut Width)</td>
-      <td>1-3/4 (44,5 mm)</td>
-   </tr>
-   <tr>
-      <td>Hals Radius</td>
-      <td class="">10-16" Compound Radius</td>
-   </tr>
-   <tr>
-      <td>Hals Mensur</td>
-      <td class="">25-1/2" Scale</td>
-   </tr>
-   <tr>
-      <td>Bridge</td>
-      <td class="">Schaller STM Bridge SC (Chrom Matt)</td>
-   </tr>
-   <tr>
-      <td>Saitenhalter</td>
-      <td class="">Schaller Tailpiece (Chrom Matt) </td>
-   </tr>
-   <tr>
-      <td>Mechaniken</td>
-      <td class="">Schaller M6L Mini (Chrom Matt) </td>
-   </tr>
-</table>
+<h2>Styles</h2>
 
-<p>Weiter im Angebot:</p>
+<p>This starter template comes pre-loaded with <a href="https://tailwindcss.com">Tailwind CSS</a>, a utility CSS framework that allows you to customize and build complex designs without touching a line of CSS. There are also a few base Sass files in the <code>/source/_assets/sass</code> folder, set up with the expectation that you can add any custom CSS into <code>_documentation.scss</code>.</p>
 
-<table>
-<thead>
-<tr>
-  <th>Jazz Blue</th>
-  <th>Jazz One</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Custom Tele</td>
-  <td>Standard Tele</td>
-</tr>
-<tr>
-  <td>sofort lieferbar</td>
-  <td>ca. 5 Wochen im Auftrag</td>
-</tr>
-<tr>
-  <td>1300€</td>
-  <td>950€</td>
-</tr>
-<tr>
-  <td><a href="/angebot/jazz-blue">mehr Infos</a></td>
-  <td><a href="/angebot/jazz-one">mehr Infos</a></td>
-</tr>
-</tbody>
-</table>
+<blockquote>
+  <p>You can re-work the architecture of the Sass includes any way you’d like; just make sure to keep the <code>@tailwind</code> references in your final files.</p>
+</blockquote>
 
-<p><a href="/angebot/">Zurück</a></p>
+<pre><code class="language-scss">// source/_assets/sass/main.scss
+
+@tailwind preflight;
+@tailwind components;
+
+// Code syntax highlighting,
+// powered by https://highlightjs.org
+@import '~highlight.js/styles/a11y-light.css';
+
+@import 'base';
+@import 'navigation';
+@import 'documentation';
+
+@tailwind utilities;
+</code></pre>
+
+<hr />
+
+<h2 id="customizing-typography">Typography Styles</h2>
+
+<p>Here’s a quick preview of what some of the basic type styles will look like in this starter template:</p>
+
+<div class="example pt-6">
+
+<h1>h1 Heading</h1>
+
+<h2>h2 Heading</h2>
+
+<h3>h3 Heading</h3>
+
+<h4>h4 Heading</h4>
+
+<h5>h5 Heading</h5>
+
+<h6>h6 Heading</h6>
+
+<p>The quick brown fox jumps over the lazy dog</p>
+
+<p><s>The quick brown fox jumps over the lazy dog</s></p>
+
+<p><u>The quick brown fox jumps over the lazy dog</u></p>
+
+<p><em>The quick brown fox jumps over the lazy dog</em></p>
+
+<p><strong>The quick brown fox jumps over the lazy dog</strong></p>
+
+<p><code>The quick brown fox jumps over the lazy dog</code></p>
+
+<p><small>The quick brown fox jumps over the lazy dog</small></p>
+
+<blockquote>
+  <p>The quick brown fox jumps over the lazy dog</p>
+</blockquote>
+
+<p><a href="#">The quick brown fox jumps over the lazy dog</a></p>
+
+<pre><code class="language-php">class Foo extends bar
+{
+    public function fooBar()
+    {
+        //
+    }
+}
+</code></pre>
+
+</div>
         </div>
     </div>
 </section>

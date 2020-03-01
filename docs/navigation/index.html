@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="Mooncaster mit Benedetto Jazz Tonabnehmern">
+        <meta name="description" content="Building a navigation menu for your site">
 
         <meta property="og:site_name" content="open-guitars.de"/>
-        <meta property="og:title" content="Angebot - Jazz Moon | open-guitars.de"/>
-        <meta property="og:description" content="Mooncaster mit Benedetto Jazz Tonabnehmern"/>
-        <meta property="og:url" content="https://www.open-guitars.de/angebot/jazz-moon"/>
+        <meta property="og:title" content="Navigation | open-guitars.de"/>
+        <meta property="og:description" content="Building a navigation menu for your site"/>
+        <meta property="og:url" content="https://www.open-guitars.de/docs/navigation"/>
         <meta property="og:image" content="/assets/images/clip1_body-nobg.png"/>
         <meta property="og:type" content="website"/>
 
@@ -17,7 +17,7 @@
         <meta name="twitter:card" content="summary_large_image">
 
         
-        <title>open-guitars.de | Angebot - Jazz Moon</title>
+        <title>open-guitars.de | Navigation</title>
 
         <link rel="home" href="https://www.open-guitars.de">
         <link rel="icon" href="/assets/images/favicon/favicon.ico">
@@ -258,107 +258,35 @@
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
 
-        	<h1 class="mb-0">Angebot - Jazz Moon</h1>
-        	<p class="text-gray-600 text-xl md:mt-0">Mooncaster mit Benedetto Jazz Tonabnehmern</p>
+        	<h1 class="mb-0">Navigation</h1>
+        	<p class="text-gray-600 text-xl md:mt-0">Building a navigation menu for your site</p>
 
-            <table>
+            <h1 id="navigation">Navigation</h1>
 
-   <tr>
-      <td> Custom Elektonik </td>
-      <td class="">"Jazz Moon" Push/Pull Vatitone</td>
-   </tr>
-   <tr>
-      <td>PU Neck</td>
-      <td class="">Seymourduncan Benedetto B-6 </td>
-   </tr>
-   <tr>
-      <td>PU Bridge</td>
-      <td class="">Seymourduncan Benedetto B-6</td>
-   </tr>
-   <tr>
-      <td>Body Modell</td>
-      <td>Warmoth Mooncaster Hollow Carved Top</td>
-   </tr>
-   <tr>
-      <td>Body Holz</td>
-      <td class="">Black Korina on Mahogany</td>
-   </tr>
-   <tr>
-      <td>Body Finish</td>
-      <td class="">Natur (Hartöl)</td>
-   </tr>
-   <tr>
-      <td>Routing</td>
-      <td class="">Rear Rout</td>
-   </tr>
-   <tr>
-      <td>Binding</td>
-      <td class="">White Binding</td>
-   </tr>
-   <tr>
-      <td>Hals Modell</td>
-      <td>Warmoth Pro Standard Thin Strat</td>
-   </tr>
-   <tr>
-      <td>Hals Holz/Griffbrett</td>
-      <td>Mahogany/Indian Rosewood</td>
-   </tr>
-   <tr>
-      <td>Hals Sattelbreite (Nut Width)</td>
-      <td>1-3/4 (44,5 mm)</td>
-   </tr>
-   <tr>
-      <td>Hals Radius</td>
-      <td class="">10-16" Compound Radius</td>
-   </tr>
-   <tr>
-      <td>Hals Mensur</td>
-      <td class="">25-1/2" Scale</td>
-   </tr>
-   <tr>
-      <td>Bridge</td>
-      <td class="">Schaller STM Bridge SC (Chrom Matt)</td>
-   </tr>
-   <tr>
-      <td>Saitenhalter</td>
-      <td class="">Schaller Tailpiece (Chrom Matt) </td>
-   </tr>
-   <tr>
-      <td>Mechaniken</td>
-      <td class="">Schaller M6L Mini (Chrom Matt) </td>
-   </tr>
-</table>
+<p>The navigation menu in the left-hand sidebar is defined using an array in <code>navigation.php</code>. Nested pages can be added by using the <code>children</code> associative array.</p>
 
-<p>Weiter im Angebot:</p>
+<pre><code class="language-php">&lt;?php
+// navigation.php
 
-<table>
-<thead>
-<tr>
-  <th>Jazz Blue</th>
-  <th>Jazz One</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Custom Tele</td>
-  <td>Standard Tele</td>
-</tr>
-<tr>
-  <td>sofort lieferbar</td>
-  <td>ca. 5 Wochen im Auftrag</td>
-</tr>
-<tr>
-  <td>1300€</td>
-  <td>950€</td>
-</tr>
-<tr>
-  <td><a href="/angebot/jazz-blue">mehr Infos</a></td>
-  <td><a href="/angebot/jazz-one">mehr Infos</a></td>
-</tr>
-</tbody>
-</table>
+return [
+    'Getting Started' =&gt; [
+        'url' =&gt; 'docs/getting-started',
+        'children' =&gt; [
+            'Customizing Your Site' =&gt; 'docs/customizing-your-site',
+            'Navigation' =&gt; 'docs/navigation',
+            'Algolia DocSearch' =&gt; 'docs/algolia-docsearch',
+            'Custom 404 Page' =&gt; 'docs/custom-404-page',
+        ],
+    ],
+    'Jigsaw Docs' =&gt; 'https://jigsaw.tighten.co/docs/installation',
+];
 
-<p><a href="/angebot/">Zurück</a></p>
+// config.php
+'navigation' =&gt; require_once('navigation.php'),
+
+// blade files
+$page-&gt;navigation
+</code></pre>
         </div>
     </div>
 </section>
